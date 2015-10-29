@@ -42,9 +42,3 @@ for (i in 1:100) {
         else print(i)
 }
 
-# vectorized fizzbuzz
-m <- 1:100
-m[which(m%%5==0)][which(m%%3==0)] <- "fizzbuzz"
-m[which(as.numeric(m)%%3==0)] <- "fizz"
-m[which(as.numeric(m)%%5==0)] <- "buzz"
-print(m)
